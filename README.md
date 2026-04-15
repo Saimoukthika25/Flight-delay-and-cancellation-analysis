@@ -1,8 +1,8 @@
-# ✈️ Flight Delay and Cancellation Analysis
+# Flight Delay and Cancellation Analysis
 
-### 📊 Data Science Project using EDA & Machine Learning
+### Data Science Project using EDA & Machine Learning
 
-## 🚀 Project Overview
+## Project Overview
 
 This project focuses on analyzing flight delays and cancellations using real-world aviation data. It combines **Exploratory Data Analysis (EDA)** and **Machine Learning techniques** to uncover patterns, identify key delay factors, and build predictive models.
 
@@ -10,7 +10,7 @@ The goal is to understand **why delays occur**, how they impact airline operatio
 
 ---
 
-## 📁 Dataset
+## Dataset
 
 * Source: Bureau of Transportation Statistics (BTS)
 * Records: **1,048,575 flights**
@@ -25,50 +25,50 @@ The goal is to understand **why delays occur**, how they impact airline operatio
 
 ---
 
-## 🧹 Data Preprocessing
+## Data Preprocessing
 
 * Removed missing values in critical columns
 * Filled delay-cause columns with 0
 * Created a new feature:
-  👉 `IS_DELAYED` (1 if delay > 15 minutes, else 0)
+   `IS_DELAYED` (1 if delay > 15 minutes, else 0)
 * Handled outliers using IQR method
 
 ---
 
-## 📊 Exploratory Data Analysis (EDA)
+## Exploratory Data Analysis (EDA)
 
 Key insights derived from visualization and analysis:
 
-* 📈 **79.1% flights are on time**, 20.9% delayed
-* 🛫 Frontier Airlines has highest delays (~23 mins)
-* 🌺 Hawaiian Airlines has lowest delays (~1.7 mins)
-* 📅 Seasonal trend: March shows highest delays
-* 🔗 Strong correlation (r ≈ 0.94) between departure & arrival delay
-* 📦 Delay distribution is right-skewed with extreme outliers
+*  **79.1% flights are on time**, 20.9% delayed
+*  Frontier Airlines has highest delays (~23 mins)
+*  Hawaiian Airlines has lowest delays (~1.7 mins)
+*  Seasonal trend: March shows highest delays
+*  Strong correlation (r ≈ 0.94) between departure & arrival delay
+*  Delay distribution is right-skewed with extreme outliers
 
 ---
 
-## 📉 Statistical Analysis
+## Statistical Analysis
 
-* ✔️ **T-Test (AA vs DL)** → Significant difference in delays
-* ✔️ **Chi-Square Test (Month vs Delay)** → Seasonal impact confirmed
+* **T-Test (AA vs DL)** → Significant difference in delays
+* **Chi-Square Test (Month vs Delay)** → Seasonal impact confirmed
 
 ---
 
-## 🤖 Machine Learning Models
+## Machine Learning Models
 
-### 🔹 Linear Regression
+### Linear Regression
 
 * Target: `ARRIVAL_DELAY`
 * Feature: `DEPARTURE_DELAY`
-* 📊 R² Score: **0.916**
-* 📉 MAE: **7.25 minutes**
+* R² Score: **0.916**
+* MAE: **7.25 minutes**
 
-👉 Shows strong prediction capability
+Shows strong prediction capability
 
 ---
 
-### 🔹 Logistic Regression
+### Logistic Regression
 
 * Target: `IS_DELAYED`
 
@@ -79,15 +79,15 @@ Key insights derived from visualization and analysis:
   * MONTH
   * TAXI_OUT
 
-* ⚖️ Balanced Dataset: 10,000 samples
+* Balanced Dataset: 10,000 samples
 
-* 📊 Accuracy: **~54%**
+* Accuracy: **~54%**
 
-* 📌 Insight: Limited features reduce classification performance
+* Insight: Limited features reduce classification performance
 
 ---
 
-## 📌 Key Insights
+## Key Insights
 
 * Departure delay is the **strongest predictor** of arrival delay
 * Delay propagation is a major factor in aviation systems
@@ -96,9 +96,9 @@ Key insights derived from visualization and analysis:
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-* Python 🐍
+* Python 
 * Pandas & NumPy
 * Matplotlib & Seaborn
 * Scikit-learn
@@ -106,7 +106,7 @@ Key insights derived from visualization and analysis:
 
 ---
 
-## 📊 Visualizations Included
+## Visualizations Included
 
 * Histogram (Delay Distribution)
 * Pie Chart (On-time vs Delayed)
@@ -117,9 +117,9 @@ Key insights derived from visualization and analysis:
 
 ---
 
-## 🔮 Future Work
+## Future Work
 
-* Integrate real-time weather API 🌦️
+* Integrate real-time weather API 
 * Use advanced models:
 
   * Random Forest
@@ -129,7 +129,7 @@ Key insights derived from visualization and analysis:
 
 ---
 
-## 💼 Author
+## Author
 
 **Thanda Sai Moukthika**
 🎓 B.Tech CSE (Data Analytics)
@@ -137,11 +137,6 @@ Key insights derived from visualization and analysis:
 
 ---
 
-## ⭐ If you like this project
-
-Give it a ⭐ on GitHub and feel free to contribute!
-
----
 
 ## Dataset Note
 Full dataset is not uploaded due to size limitations. A sample dataset is provided.
